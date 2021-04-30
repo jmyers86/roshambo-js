@@ -10,3 +10,40 @@ body {
   margin: 0;
   min-height: 100%;
 }
+
+.Roshambo {
+  display: flex;
+  justify-content: space-around;
+  border: 50px;
+}
+
+.playerOne h2 {
+  display: flex;
+  justify-content: space-around;
+}
+.playerTwo h2 {
+  display: flex;
+  justify-content: space-around;
+}
+
+p {
+  text-align: center;
+}
+
+section ul {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  max-width: 10rem;
+  padding-left: 0;
+  list-style: none;
+  margin: auto;
+}
+
+section ul li:first-child {
+  grid-column: 1 / span 2;
+}
+
+section ul li {
+  text-align: center;
+}
