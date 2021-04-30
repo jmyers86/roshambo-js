@@ -1,21 +1,51 @@
 function playerOneChoosesRock() {
-  playerOneChoice === 'r'
+  playerOneChoice = 'r'
+  gameResult()
 }
 function playerOneChoosesPaper() {
-  playerOneChoice === 'p'
+  playerOneChoice = 'p'
+  gameResult()
 }
 function playerOneChoosesScissors() {
-  playerOneChoice === 's'
+  playerOneChoice = 's'
+  gameResult()
 }
 
 function playerTwoChoosesRock() {
-  playerTwoChoice === 'r'
+  playerTwoChoice = 'r'
+  gameResult()
 }
 function playerTwoChoosesPaper() {
-  playerTwoChoice === 'p'
+  playerTwoChoice = 'p'
+  gameResult()
 }
 function playerTwoChoosesScissors() {
-  playerTwoChoice === 's'
+  playerTwoChoice = 's'
+  gameResult()
+}
+
+function gameResult() {
+  if (playerOneChoice === 'r' && playerTwoChoice === 's') {
+    document.querySelector('.message span').textContent = `Player One`
+  }
+  if (playerOneChoice === 'p' && playerTwoChoice === 'r') {
+    document.querySelector('.message span').textContent = `Player One`
+  }
+  if (playerOneChoice === 's' && playerTwoChoice === 'p') {
+    document.querySelector('.message span').textContent = `Player One`
+  }
+  if (playerTwoChoice === 'r' && playerOneChoice === 's') {
+    document.querySelector('.message span').textContent = `Player Two`
+  }
+  if (playerTwoChoice === 'p' && playerOneChoice === 'r') {
+    document.querySelector('.message span').textContent = `Player Two`
+  }
+  if (playerTwoChoice === 's' && playerOneChoice === 'p') {
+    document.querySelector('.message span').textContent = `Player Two`
+  }
+  if (playerTwoChoice === playerOneChoice) {
+    document.querySelector('.message').textContent = `Tie Game!`
+  }
 }
 
 let playerOneChoice
