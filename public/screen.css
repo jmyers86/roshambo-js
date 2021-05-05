@@ -14,7 +14,6 @@ body {
 .Roshambo {
   display: flex;
   justify-content: space-around;
-  border: 50px;
 }
 
 .playerOne h2 {
