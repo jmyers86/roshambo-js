@@ -46,3 +46,8 @@ section ul li:first-child {
 section ul li {
   text-align: center;
 }
+
+footer {
+  margin: 3rem 0;
+  text-align: center;
+}

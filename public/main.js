@@ -23,25 +23,29 @@ function playerTwoChoosesScissors() {
   playerTwoChoice = 's'
   gameResult()
 }
+function playerReplay() {
+  window.location.reload()
+  // document.querySelector('.message').textContent = 'New Game!'
+}
 
 function gameResult() {
   if (playerOneChoice === 'r' && playerTwoChoice === 's') {
-    document.querySelector('.message span').textContent = `Player One`
+    document.querySelector('.message span').textContent = `Player One Wins!`
   }
   if (playerOneChoice === 'p' && playerTwoChoice === 'r') {
-    document.querySelector('.message span').textContent = `Player One`
+    document.querySelector('.message span').textContent = `Player One Wins!`
   }
   if (playerOneChoice === 's' && playerTwoChoice === 'p') {
-    document.querySelector('.message span').textContent = `Player One`
+    document.querySelector('.message span').textContent = `Player One Wins!`
   }
   if (playerTwoChoice === 'r' && playerOneChoice === 's') {
-    document.querySelector('.message span').textContent = `Player Two`
+    document.querySelector('.message span').textContent = `Player Two Wins!`
   }
   if (playerTwoChoice === 'p' && playerOneChoice === 'r') {
-    document.querySelector('.message span').textContent = `Player Two`
+    document.querySelector('.message span').textContent = `Player Two Wins!`
   }
   if (playerTwoChoice === 's' && playerOneChoice === 'p') {
-    document.querySelector('.message span').textContent = `Player Two`
+    document.querySelector('.message span').textContent = `Player Two Wins!`
   }
   if (playerTwoChoice === playerOneChoice) {
     document.querySelector('.message').textContent = `Tie Game!`
@@ -74,6 +78,8 @@ function main() {
   document
     .querySelector('.playerTwo .scissors')
     .addEventListener('click', playerTwoChoosesScissors)
+
+  document.querySelector('.replay').addEventListener('click', playerReplay)
 }
 
 document.addEventListener('DOMContentLoaded', main)
