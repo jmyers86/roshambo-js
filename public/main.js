@@ -30,22 +30,22 @@ function playerReplay() {
 
 function gameResult() {
   if (playerOneChoice === 'r' && playerTwoChoice === 's') {
-    document.querySelector('.message span').textContent = `Player One Wins!`
+    document.querySelector('.message').textContent = `Player One Wins!`
   }
   if (playerOneChoice === 'p' && playerTwoChoice === 'r') {
-    document.querySelector('.message span').textContent = `Player One Wins!`
+    document.querySelector('.message').textContent = `Player One Wins!`
   }
   if (playerOneChoice === 's' && playerTwoChoice === 'p') {
-    document.querySelector('.message span').textContent = `Player One Wins!`
+    document.querySelector('.message').textContent = `Player One Wins!`
   }
   if (playerTwoChoice === 'r' && playerOneChoice === 's') {
-    document.querySelector('.message span').textContent = `Player Two Wins!`
+    document.querySelector('.message').textContent = `Player Two Wins!`
   }
   if (playerTwoChoice === 'p' && playerOneChoice === 'r') {
-    document.querySelector('.message span').textContent = `Player Two Wins!`
+    document.querySelector('.message').textContent = `Player Two Wins!`
   }
   if (playerTwoChoice === 's' && playerOneChoice === 'p') {
-    document.querySelector('.message span').textContent = `Player Two Wins!`
+    document.querySelector('.message').textContent = `Player Two Wins!`
   }
   if (playerTwoChoice === playerOneChoice) {
     document.querySelector('.message').textContent = `Tie Game!`
